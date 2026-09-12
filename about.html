@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Reetech Digital Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0B0C10',
+            brandCard: '#1F2833',
+            brandNeon: '#00F0FF',
+            brandMuted: '#C5C6C7'
+          },
+          boxShadow: {
+            'neon-glow': '0 0 15px rgba(0, 240, 255, 0.4)',
+            'neon-strong': '0 0 25px rgba(0, 240, 255, 0.8)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0C10;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2833;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00F0FF;
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandNeon selection:text-black">
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-brandDark/90 backdrop-blur-md border-b border-brandCard">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-white flex items-center gap-1">
+        Reetech<span class="text-brandNeon font-mono">&lt;Tech/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html#home" class="hover:text-brandNeon transition-colors">Home</a>
+        <a href="about.html" class="text-brandNeon font-semibold">About</a>
+        <a href="index.html#services" class="hover:text-brandNeon transition-colors">Services</a>
+        <a href="index.html#contracts" class="hover:text-brandNeon transition-colors">Contracts</a>
+        <a href="index.html#portfolio" class="hover:text-brandNeon transition-colors">Portfolio</a>
+        <a href="index.html#testimonials" class="hover:text-brandNeon transition-colors">Testimonials</a>
+        <a href="index.html#faqs" class="hover:text-brandNeon transition-colors">FAQs</a>
+        <a href="index.html#contact" class="hover:text-brandNeon transition-colors">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white hover:text-brandNeon focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-brandNeon/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html#home" class="block py-2 text-brandMuted hover:text-brandNeon">Home</a>
+      <a href="about.html" class="block py-2 text-brandNeon font-semibold">About</a>
+      <a href="index.html#services" class="block py-2 text-brandMuted hover:text-brandNeon">Services</a>
+      <a href="index.html#contracts" class="block py-2 text-brandMuted hover:text-brandNeon">Contracts</a>
+      <a href="index.html#portfolio" class="block py-2 text-brandMuted hover:text-brandNeon">Portfolio</a>
+      <a href="index.html#testimonials" class="block py-2 text-brandMuted hover:text-brandNeon">Testimonials</a>
+      <a href="index.html#faqs" class="block py-2 text-brandMuted hover:text-brandNeon">FAQs</a>
+      <a href="index.html#contact" class="block py-2 text-brandMuted hover:text-brandNeon">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative py-16 overflow-hidden border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="inline-block px-3 py-1 bg-brandCard border border-brandNeon/30 rounded-full text-brandNeon text-xs tracking-wider uppercase">
+          <i class="fa-solid fa-user-gear mr-2"></i>Developer Profile & Agency Overview
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+          About <span class="text-brandNeon">Reetech Digital Solutions</span>
+        </h1>
+        <p class="text-brandMuted text-lg max-w-2xl mx-auto">
+          Crafting performant digital experiences, bridging pixel-perfect design concepts into robust front-end web code.
+        </p>
+      </div>
+    </section>
+
+    <!-- DETAILED BIOGRAPHY & STORY -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Visual Frame -->
+        <div class="flex justify-center">
+          <div class="relative w-80 h-96 sm:w-96 sm:h-[450px] rounded-2xl p-1 bg-gradient-to-br from-brandNeon via-brandCard to-brandDark shadow-neon-glow">
+            <div class="w-full h-full bg-brandCard rounded-xl overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Reetech Developer Profile" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-transparent opacity-80"></div>
+              <div class="absolute bottom-6 left-6 right-6 p-4 bg-brandDark/90 rounded-lg border border-brandNeon/30 backdrop-blur-md">
+                <p class="text-xs text-brandNeon font-mono">LOCATION & HEADQUARTERS</p>
+                <h3 class="text-lg font-bold text-white">Apapa, Lagos State, Nigeria</h3>
+                <p class="text-xs text-brandMuted">Serving local SMEs & global enterprise partners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold tracking-tight">
+            Passionate Front-End developer & <span class="text-brandNeon">Interactive UI/UX</span>
+          </h2>
+          <p class="text-brandMuted leading-relaxed">
+            I am <strong>Reetech</strong>, a Full Stack Developer specializing in front-end web development based in <strong>Apapa, Lagos State</strong>. Through my brand, <strong>Reetech Digital Solutions</strong>, I focus on turning complex UI/UX design concepts into fluid, responsive, and accessible interactive web applications.
+          </p>
+          <p class="text-brandMuted leading-relaxed">
+            With expertise across HTML5, CSS3, JavaScript, and modern front-end tooling, I build software that balances visual fidelity with web performance, lightning-fast load times, and cross-browser responsiveness.
+          </p>
+          <div class="p-4 bg-brandCard rounded-xl border-l-4 border-brandNeon space-y-2">
+            <h4 class="font-bold text-sm text-white">Enterprise & SME Collaborations</h4>
+            <p class="text-xs text-brandMuted">
+              From contract engagements with major investors in Nigeria to customized digital portals for scaling SMEs, we deliver scalable web systems designed for growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS & PROFICIENCY -->
+    <section class="py-16 bg-brandCard/30 border-y border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Technical <span class="text-brandNeon">Proficiency</span></h2>
+          <p class="text-brandMuted max-w-xl mx-auto">Core web standards and execution capabilities.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Card 1 -->
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/20 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-brandNeon text-2xl"><i class="fa-brands fa-html5"></i></span>
+              <span class="text-xs font-mono text-brandNeon">95% Mastery</span>
+            </div>
+            <h3 class="font-bold text-lg">Semantic HTML5</h3>
+            <p class="text-brandMuted text-sm">Structuring accessible, clean, and SEO-optimized Web pages according to W3C standards.</p>
+            <div class="w-full bg-brandDark h-2 rounded-full overflow-hidden">
+              <div class="bg-brandNeon h-full w-[95%]"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/20 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-brandNeon text-2xl"><i class="fa-brands fa-css3-alt"></i></span>
+              <span class="text-xs font-mono text-brandNeon">92% Mastery</span>
+            </div>
+            <h3 class="font-bold text-lg">CSS3 & Tailwind CSS</h3>
+            <p class="text-brandMuted text-sm">Crafting custom layouts, responsive grids, keyframe animations, and dark mode design systems.</p>
+            <div class="w-full bg-brandDark h-2 rounded-full overflow-hidden">
+              <div class="bg-brandNeon h-full w-[92%]"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/20 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-brandNeon text-2xl"><i class="fa-brands fa-js"></i></span>
+              <span class="text-xs font-mono text-brandNeon">90% Mastery</span>
+            </div>
+            <h3 class="font-bold text-lg">JavaScript (ES6+)</h3>
+            <p class="text-brandMuted text-sm">DOM manipulation, asynchronous operations, interactive modals, dynamic API interactions, and state management.</p>
+            <div class="w-full bg-brandDark h-2 rounded-full overflow-hidden">
+              <div class="bg-brandNeon h-full w-[90%]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES & WORKING METHODOLOGY -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Development <span class="text-brandNeon">Principles</span></h2>
+          <p class="text-brandMuted max-w-xl mx-auto">How we approach every project at Reetech Digital Solutions.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 hover:border-brandNeon transition-all">
+            <div class="w-12 h-12 rounded-lg bg-brandNeon/10 border border-brandNeon flex items-center justify-center text-brandNeon text-xl mb-4">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">1. Mobile-First First</h3>
+            <p class="text-brandMuted text-sm">Every line of CSS and layout is designed from mobile screens upward, ensuring optimal user experience across smartphones, tablets, and wide displays.</p>
+          </div>
+
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 hover:border-brandNeon transition-all">
+            <div class="w-12 h-12 rounded-lg bg-brandNeon/10 border border-brandNeon flex items-center justify-center text-brandNeon text-xl mb-4">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">2. Performance Optimization</h3>
+            <p class="text-brandMuted text-sm">Clean, modular code without bloated dependencies guarantees swift page loads and high Lighthouse performance metrics.</p>
+          </div>
+
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 hover:border-brandNeon transition-all">
+            <div class="w-12 h-12 rounded-lg bg-brandNeon/10 border border-brandNeon flex items-center justify-center text-brandNeon text-xl mb-4">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="text-lg font-bold mb-2">3. Direct Communication</h3>
+            <p class="text-brandMuted text-sm">Clear milestones, contract clarity, and ongoing tech support for Nigerian investors, SMEs, and international clients alike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-12 bg-gradient-to-r from-brandCard via-brandDark to-brandCard border-y border-brandNeon/30">
+      <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+        <h2 class="text-3xl font-bold">Ready to Elevate Your Web Presence?</h2>
+        <p class="text-brandMuted max-w-xl mx-auto">Get in touch with Reetech Digital Solutions today to discuss your front-end project or enterprise tech contract.</p>
+        <div class="flex justify-center gap-4">
+          <a href="index.html#contact" class="px-6 py-3 bg-brandNeon text-brandDark font-bold rounded-lg hover:bg-white transition-all shadow-neon-glow">
+            Contact Us
+          </a>
+          <a href="tel:08143278091" class="px-6 py-3 border border-brandNeon text-brandNeon font-bold rounded-lg hover:bg-brandNeon/10 transition-all">
+            Call: 08143278091
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandDark border-t border-brandCard py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-brandMuted text-xs">
+        © 2026 Reetech Digital Solutions. All Rights Reserved. Located in Apapa, Lagos State.
+      </p>
+      <div class="flex space-x-4 text-brandMuted text-lg">
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU JAVASCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

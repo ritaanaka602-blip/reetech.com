@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Testimonials & Reviews | Reetech Digital Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0B0C10',
+            brandCard: '#1F2833',
+            brandNeon: '#00F0FF',
+            brandMuted: '#C5C6C7'
+          },
+          boxShadow: {
+            'neon-glow': '0 0 15px rgba(0, 240, 255, 0.4)',
+            'neon-strong': '0 0 25px rgba(0, 240, 255, 0.8)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0C10;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2833;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00F0FF;
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandNeon selection:text-black">
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-brandDark/90 backdrop-blur-md border-b border-brandCard">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-white flex items-center gap-1">
+        Reetech<span class="text-brandNeon font-mono">&lt;Tech/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html#home" class="hover:text-brandNeon transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandNeon transition-colors">About</a>
+        <a href="services.html" class="hover:text-brandNeon transition-colors">Services</a>
+        <a href="contracts.html" class="hover:text-brandNeon transition-colors">Contracts</a>
+        <a href="portfolio.html" class="hover:text-brandNeon transition-colors">Portfolio</a>
+        <a href="testimonials.html" class="text-brandNeon font-semibold">Testimonials</a>
+        <a href="index.html#faqs" class="hover:text-brandNeon transition-colors">FAQs</a>
+        <a href="index.html#contact" class="hover:text-brandNeon transition-colors">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white hover:text-brandNeon focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-brandNeon/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html#home" class="block py-2 text-brandMuted hover:text-brandNeon">Home</a>
+      <a href="about.html" class="block py-2 text-brandMuted hover:text-brandNeon">About</a>
+      <a href="services.html" class="block py-2 text-brandMuted hover:text-brandNeon">Services</a>
+      <a href="contracts.html" class="block py-2 text-brandMuted hover:text-brandNeon">Contracts</a>
+      <a href="portfolio.html" class="block py-2 text-brandMuted hover:text-brandNeon">Portfolio</a>
+      <a href="testimonials.html" class="block py-2 text-brandNeon font-semibold">Testimonials</a>
+      <a href="index.html#faqs" class="block py-2 text-brandMuted hover:text-brandNeon">FAQs</a>
+      <a href="index.html#contact" class="block py-2 text-brandMuted hover:text-brandNeon">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative py-16 overflow-hidden border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="inline-block px-3 py-1 bg-brandCard border border-brandNeon/30 rounded-full text-brandNeon text-xs tracking-wider uppercase">
+          <i class="fa-solid fa-comments mr-2"></i>Verified Client & Partner Reviews
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Client Feedback & <span class="text-brandNeon">Endorsements</span>
+        </h1>
+        <p class="text-brandMuted text-lg max-w-2xl mx-auto">
+          Read what enterprise executives, angel investors, and SME business owners in Nigeria say about engineering partnerships with Reetech Digital Solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRUST STATS & METRICS -->
+    <section class="py-12 bg-brandCard/20 border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="bg-brandCard p-6 rounded-2xl border border-brandNeon/20">
+            <h3 class="text-3xl font-extrabold text-brandNeon">99.4%</h3>
+            <p class="text-xs font-mono text-brandMuted uppercase mt-1">Client Satisfaction Rate</p>
+          </div>
+          <div class="bg-brandCard p-6 rounded-2xl border border-brandNeon/20">
+            <h3 class="text-3xl font-extrabold text-brandNeon">45+</h3>
+            <p class="text-xs font-mono text-brandMuted uppercase mt-1">Completed Contracts</p>
+          </div>
+          <div class="bg-brandCard p-6 rounded-2xl border border-brandNeon/20">
+            <h3 class="text-3xl font-extrabold text-brandNeon">100%</h3>
+            <p class="text-xs font-mono text-brandMuted uppercase mt-1">On-Time Project Delivery</p>
+          </div>
+          <div class="bg-brandCard p-6 rounded-2xl border border-brandNeon/20">
+            <h3 class="text-3xl font-extrabold text-brandNeon">5.0 / 5.0</h3>
+            <p class="text-xs font-mono text-brandMuted uppercase mt-1">Average Star Rating</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS FILTER & GRID SECTION -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3">
+          <button class="filter-btn active px-5 py-2 rounded-full border border-brandNeon bg-brandNeon text-brandDark font-bold text-xs uppercase tracking-wider transition-all" data-filter="all">All Reviews</button>
+          <button class="filter-btn px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-filter="investor">Investors & Partners</button>
+          <button class="filter-btn px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-filter="sme">SME Owners</button>
+          <button class="filter-btn px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-filter="enterprise">Enterprise Tech Leaders</button>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1: Investor -->
+          <div class="review-card investor bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] font-mono rounded">INVESTOR DEAL</span>
+              </div>
+              <p class="text-brandMuted text-sm leading-relaxed italic">
+                "Reetech Digital Solutions delivered on our multi-stage web application contract with unmatched precision. Their front-end performance tuning reduced our portal load speeds dramatically. Highly recommended for venture deals."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-brandNeon/10">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Executive Director" class="w-12 h-12 rounded-full object-cover border border-brandNeon">
+              <div>
+                <h4 class="font-bold text-sm">Olumide Adebayo</h4>
+                <p class="text-xs text-brandMuted font-mono">Managing Partner, TechVentures West Africa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: SME Owner -->
+          <div class="review-card sme bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] font-mono rounded">SME CONTRACT</span>
+              </div>
+              <p class="text-brandMuted text-sm leading-relaxed italic">
+                "As a logistics firm based in Apapa, having a reliable digital presence was critical. Reetech transformed our client interface into a seamless, fast platform. Our online bookings jumped significantly."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-brandNeon/10">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="SME Director" class="w-12 h-12 rounded-full object-cover border border-brandNeon">
+              <div>
+                <h4 class="font-bold text-sm">Chidi Nwachukwu</h4>
+                <p class="text-xs text-brandMuted font-mono">CEO, Maritime Logistics Hub, Lagos</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: Enterprise -->
+          <div class="review-card enterprise bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] font-mono rounded">ENTERPRISE</span>
+              </div>
+              <p class="text-brandMuted text-sm leading-relaxed italic">
+                "Clean code architecture, responsive UI components, and strict adherence to project timelines. Reetech operates at international front-end engineering standards."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-brandNeon/10">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="VP of Engineering" class="w-12 h-12 rounded-full object-cover border border-brandNeon">
+              <div>
+                <h4 class="font-bold text-sm">Amina Bello</h4>
+                <p class="text-xs text-brandMuted font-mono">Head of Product, Enterprise Tech Corp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4: SME Owner -->
+          <div class="review-card sme bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] font-mono rounded">RETAIL SME</span>
+              </div>
+              <p class="text-brandMuted text-sm leading-relaxed italic">
+                "Their team crafted our e-commerce front-end layout flawlessly. Mobile responsiveness is 10/10, and our clients in Lagos constantly praise the slick design."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-brandNeon/10">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Retail Founder" class="w-12 h-12 rounded-full object-cover border border-brandNeon">
+              <div>
+                <h4 class="font-bold text-sm">Tunde Bakare</h4>
+                <p class="text-xs text-brandMuted font-mono">Founder, Urban Retail Group</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5: Investor -->
+          <div class="review-card investor bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] font-mono rounded">INVESTOR PARTNER</span>
+              </div>
+              <p class="text-brandMuted text-sm leading-relaxed italic">
+                "Working with Reetech on our startup incubation portal was a breeze. They understand contract terms, respect non-disclosure requirements, and execute code with high precision."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-brandNeon/10">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Venture Partner" class="w-12 h-12 rounded-full object-cover border border-brandNeon">
+              <div>
+                <h4 class="font-bold text-sm">Emeka Okafor</h4>
+                <p class="text-xs text-brandMuted font-mono">Investment Director, Capital Acceleration Syndicate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 6: Enterprise -->
+          <div class="review-card enterprise bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col justify-between space-y-6">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] font-mono rounded">CORPORATE DEAL</span>
+              </div>
+              <p class="text-brandMuted text-sm leading-relaxed italic">
+                "Their developer retention contract gave us dedicated technical support during our nationwide platform rollout. Reetech is our go-to engineering vendor in Lagos State."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-brandNeon/10">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Corporate Exec" class="w-12 h-12 rounded-full object-cover border border-brandNeon">
+              <div>
+                <h4 class="font-bold text-sm">Funke Adeleke</h4>
+                <p class="text-xs text-brandMuted font-mono">Operations Director, Synergies Nigeria</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBMIT A CLIENT REVIEW FORM -->
+    <section class="py-16 bg-brandCard/30 border-t border-brandCard">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Worked with Us? <span class="text-brandNeon">Leave Feedback</span></h2>
+          <p class="text-brandMuted max-w-lg mx-auto">We value our clients and enterprise partners. Share your project experience with Reetech Digital Solutions.</p>
+        </div>
+
+        <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/30 shadow-neon-glow">
+          <form onsubmit="event.preventDefault(); alert('Thank you for your testimonial! Your review has been submitted for moderation.');" class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">YOUR NAME & TITLE</label>
+                <input type="text" required placeholder="e.g. Founder & CEO" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">COMPANY / ORGANIZATION</label>
+                <input type="text" required placeholder="e.g. Lagos Tech Ltd" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">ENGAGEMENT CATEGORY</label>
+                <select class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon text-white">
+                  <option>SME Web Project</option>
+                  <option>Enterprise Retainer Contract</option>
+                  <option>Investor Partnership</option>
+                  <option>Front-End App Audit</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">STAR RATING</label>
+                <select class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon text-white">
+                  <option>5 Stars - Exceptional</option>
+                  <option>4 Stars - Great Service</option>
+                  <option>3 Stars - Satisfactory</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-brandMuted mb-2">YOUR TESTIMONIAL</label>
+              <textarea rows="4" required placeholder="Describe your experience working with Reetech Digital Solutions..." class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-brandNeon text-brandDark font-bold rounded-lg hover:bg-white transition-all shadow-neon-glow uppercase tracking-wider">
+              Submit Client Testimonial
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandDark border-t border-brandCard py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-brandMuted text-xs">
+        © 2026 Reetech Digital Solutions. All Rights Reserved. Located in Apapa, Lagos State. Phone: 08143278091
+      </p>
+      <div class="flex space-x-4 text-brandMuted text-lg">
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Mobile Drawer Navigation
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Dynamic Filter Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const reviewCards = document.querySelectorAll('.review-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Toggle Active Class
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-brandNeon', 'text-brandDark');
+          b.classList.add('bg-brandCard', 'text-brandMuted');
+        });
+        btn.classList.add('active', 'bg-brandNeon', 'text-brandDark');
+        btn.classList.remove('bg-brandCard', 'text-brandMuted');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        reviewCards.forEach(card => {
+          if (filterValue === 'all' || card.classList.contains(filterValue)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

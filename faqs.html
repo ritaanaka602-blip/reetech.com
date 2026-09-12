@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions | Reetech Digital Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0B0C10',
+            brandCard: '#1F2833',
+            brandNeon: '#00F0FF',
+            brandMuted: '#C5C6C7'
+          },
+          boxShadow: {
+            'neon-glow': '0 0 15px rgba(0, 240, 255, 0.4)',
+            'neon-strong': '0 0 25px rgba(0, 240, 255, 0.8)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0C10;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2833;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00F0FF;
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandNeon selection:text-black">
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-brandDark/90 backdrop-blur-md border-b border-brandCard">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-white flex items-center gap-1">
+        Reetech<span class="text-brandNeon font-mono">&lt;Tech/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html#home" class="hover:text-brandNeon transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandNeon transition-colors">About</a>
+        <a href="services.html" class="hover:text-brandNeon transition-colors">Services</a>
+        <a href="contracts.html" class="hover:text-brandNeon transition-colors">Contracts</a>
+        <a href="portfolio.html" class="hover:text-brandNeon transition-colors">Portfolio</a>
+        <a href="testimonials.html" class="hover:text-brandNeon transition-colors">Testimonials</a>
+        <a href="faqs.html" class="text-brandNeon font-semibold">FAQs</a>
+        <a href="index.html#contact" class="hover:text-brandNeon transition-colors">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white hover:text-brandNeon focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-brandNeon/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html#home" class="block py-2 text-brandMuted hover:text-brandNeon">Home</a>
+      <a href="about.html" class="block py-2 text-brandMuted hover:text-brandNeon">About</a>
+      <a href="services.html" class="block py-2 text-brandMuted hover:text-brandNeon">Services</a>
+      <a href="contracts.html" class="block py-2 text-brandMuted hover:text-brandNeon">Contracts</a>
+      <a href="portfolio.html" class="block py-2 text-brandMuted hover:text-brandNeon">Portfolio</a>
+      <a href="testimonials.html" class="block py-2 text-brandMuted hover:text-brandNeon">Testimonials</a>
+      <a href="faqs.html" class="block py-2 text-brandNeon font-semibold">FAQs</a>
+      <a href="index.html#contact" class="block py-2 text-brandMuted hover:text-brandNeon">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative py-16 overflow-hidden border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <div class="inline-block px-3 py-1 bg-brandCard border border-brandNeon/30 rounded-full text-brandNeon text-xs tracking-wider uppercase">
+          <i class="fa-solid fa-circle-question mr-2"></i>Help Center & Inquiry Hub
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Frequently Asked <span class="text-brandNeon">Questions</span>
+        </h1>
+        <p class="text-brandMuted text-lg max-w-2xl mx-auto">
+          Everything you need to know about partnering with Reetech Digital Solutions, our front-end development capabilities, SME options, and investor contract frameworks.
+        </p>
+
+        <!-- LIVE SEARCH BAR -->
+        <div class="max-w-xl mx-auto relative pt-4">
+          <input type="text" id="faq-search" placeholder="Search questions (e.g. contracts, SME, stack, location)..." class="w-full bg-brandCard border border-brandNeon/30 rounded-xl px-5 py-4 pl-12 text-sm text-white placeholder-brandMuted focus:outline-none focus:border-brandNeon focus:shadow-neon-glow transition-all">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-8 text-brandNeon"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS FILTER & ACCORDION SECTION -->
+    <section class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-3">
+          <button class="faq-tab active px-5 py-2 rounded-full border border-brandNeon bg-brandNeon text-brandDark font-bold text-xs uppercase tracking-wider transition-all" data-category="all">All Questions</button>
+          <button class="faq-tab px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-category="general">General & Location</button>
+          <button class="faq-tab px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-category="tech">Development & Stack</button>
+          <button class="faq-tab px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-category="sme">SME Services</button>
+          <button class="faq-tab px-5 py-2 rounded-full border border-brandNeon/30 bg-brandCard text-brandMuted hover:border-brandNeon hover:text-white font-bold text-xs uppercase tracking-wider transition-all" data-category="contract">Investor Contracts</button>
+        </div>
+
+        <!-- Accordions Container -->
+        <div class="space-y-4" id="faq-accordion-container">
+
+          <!-- FAQ Item 1 (General) -->
+          <div class="faq-item general bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-brandNeon text-sm"></i>
+                Where is Reetech Digital Solutions located?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              Reetech Digital Solutions is headquartered in <strong>Apapa, Lagos State, Nigeria</strong>. We provide software and front-end development services locally across Nigeria, as well as remote developer engagements for international enterprise partners.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 (General) -->
+          <div class="faq-item general bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-phone text-brandNeon text-sm"></i>
+                How can I directly contact or reach Reetech Digital Solutions?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              You can contact us via phone at <strong>08143278091</strong>, send an email to <strong>reetech@gmail.com</strong>, or fill out the consultation form on our website. We respond to inquiries within 24 hours.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 (Tech) -->
+          <div class="faq-item tech bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-code text-brandNeon text-sm"></i>
+                What core technologies and frameworks do you use?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              We specialize in modern web technologies including <strong>HTML5, CSS3, ES6+ JavaScript, Tailwind CSS, Flexbox/Grid, REST APIs, and Responsive UI architecture</strong>. Our builds prioritize lightweight execution, ultra-fast load times, and cross-device compatibility.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 (Tech) -->
+          <div class="faq-item tech bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-bolt text-brandNeon text-sm"></i>
+                Can you translate existing Figma or Adobe XD designs into live code?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              Yes, pixel-perfect design implementation is one of our primary specialties. We convert Figma, Sketch, or Adobe XD mockups into production-ready front-end web applications complete with micro-interactions and mobile responsiveness.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 (SME) -->
+          <div class="faq-item sme bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-store text-brandNeon text-sm"></i>
+                What web packages do you offer for Nigerian SMEs?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              We offer tailored SME packages that include high-converting business web portals, digital showcase pages, lead generation forms, and SEO-optimized local landing pages designed to convert online visitors into loyal customers.
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 (Contract) -->
+          <div class="faq-item contract bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-file-signature text-brandNeon text-sm"></i>
+                How do investor and enterprise contract engagements work?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              We formalize enterprise contracts through fixed-milestone deliverables or ongoing developer retainers. Every agreement includes NDAs to protect intellectual property, transparent code audits, and dedicated technical maintenance schedules.
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 (Contract) -->
+          <div class="faq-item contract bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-shield-halved text-brandNeon text-sm"></i>
+                Do you sign Non-Disclosure Agreements (NDAs)?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              Absolutely. We enforce strict confidentiality standards. All proprietary code, business logic, and venture documents remain completely protected under signed legal NDAs before initial project kickoff.
+            </div>
+          </div>
+
+          <!-- FAQ Item 8 (General) -->
+          <div class="faq-item general bg-brandCard rounded-2xl border border-brandNeon/20 overflow-hidden transition-all duration-300">
+            <button class="accordion-toggle w-full px-6 py-5 flex items-center justify-between text-left hover:text-brandNeon focus:outline-none">
+              <span class="font-bold text-lg flex items-center gap-3">
+                <i class="fa-solid fa-clock text-brandNeon text-sm"></i>
+                What is the typical turnaround time for a standard website?
+              </span>
+              <i class="fa-solid fa-chevron-down text-brandNeon transition-transform duration-300 transform icon-chevron"></i>
+            </button>
+            <div class="accordion-content hidden px-6 pb-6 text-brandMuted text-sm leading-relaxed border-t border-brandNeon/10 pt-4">
+              Standard SME web portals typically take 1 to 2 weeks, depending on design specs and complexity. Complex enterprise applications or retainer engagements operate on custom sprint timelines agreed upon during contract setup.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STILL HAVE QUESTIONS SECTION -->
+    <section class="py-16 bg-brandCard/30 border-t border-brandCard">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Still Have <span class="text-brandNeon">Questions?</span></h2>
+          <p class="text-brandMuted max-w-lg mx-auto">Can't find the answer you are looking for? Send us your direct inquiry and our engineering team will assist you.</p>
+        </div>
+
+        <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/30 shadow-neon-glow">
+          <form onsubmit="event.preventDefault(); alert('Your query has been submitted! Reetech Digital Solutions will get back to you shortly.');" class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">NAME</label>
+                <input type="text" required placeholder="Your full name" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">EMAIL ADDRESS</label>
+                <input type="email" required placeholder="reetech@gmail.com" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-brandMuted mb-2">SUBJECT / INQUIRY TYPE</label>
+              <select class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon text-white">
+                <option>General Information Inquiry</option>
+                <option>Custom Web Development Quote</option>
+                <option>SME Web Package Consultation</option>
+                <option>Enterprise & Investor Contract</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-brandMuted mb-2">YOUR QUESTION</label>
+              <textarea rows="4" required placeholder="Type your question or project details here..." class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-brandNeon text-brandDark font-bold rounded-lg hover:bg-white transition-all shadow-neon-glow uppercase tracking-wider">
+              Send Your Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandDark border-t border-brandCard py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-brandMuted text-xs">
+        © 2026 Reetech Digital Solutions. All Rights Reserved. Located in Apapa, Lagos State. Phone: 08143278091
+      </p>
+      <div class="flex space-x-4 text-brandMuted text-lg">
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Mobile Drawer Navigation
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Accordion Toggle Logic
+    const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+    accordionToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.icon-chevron');
+
+        // Toggle Content Visibility
+        content.classList.toggle('hidden');
+        
+        // Rotate Icon
+        if (content.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Category Filtering Logic
+    const faqTabs = document.querySelectorAll('.faq-tab');
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Active Button Styling
+        faqTabs.forEach(t => {
+          t.classList.remove('active', 'bg-brandNeon', 'text-brandDark');
+          t.classList.add('bg-brandCard', 'text-brandMuted');
+        });
+        tab.classList.add('active', 'bg-brandNeon', 'text-brandDark');
+        tab.classList.remove('bg-brandCard', 'text-brandMuted');
+
+        const category = tab.getAttribute('data-category');
+
+        faqItems.forEach(item => {
+          if (category === 'all' || item.classList.contains(category)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Real-Time Search Filter Logic
+    const searchInput = document.getElementById('faq-search');
+
+    searchInput.addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+
+      faqItems.forEach(item => {
+        const questionText = item.querySelector('.accordion-toggle').textContent.toLowerCase();
+        const answerText = item.querySelector('.accordion-content').textContent.toLowerCase();
+
+        if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

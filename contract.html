@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Contracts & Collaborations | Reetech Digital Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0B0C10',
+            brandCard: '#1F2833',
+            brandNeon: '#00F0FF',
+            brandMuted: '#C5C6C7'
+          },
+          boxShadow: {
+            'neon-glow': '0 0 15px rgba(0, 240, 255, 0.4)',
+            'neon-strong': '0 0 25px rgba(0, 240, 255, 0.8)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0C10;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2833;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00F0FF;
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandNeon selection:text-black">
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-brandDark/90 backdrop-blur-md border-b border-brandCard">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-white flex items-center gap-1">
+        Reetech<span class="text-brandNeon font-mono">&lt;Tech/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html#home" class="hover:text-brandNeon transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandNeon transition-colors">About</a>
+        <a href="services.html" class="hover:text-brandNeon transition-colors">Services</a>
+        <a href="contracts.html" class="text-brandNeon font-semibold">Contracts</a>
+        <a href="index.html#portfolio" class="hover:text-brandNeon transition-colors">Portfolio</a>
+        <a href="index.html#testimonials" class="hover:text-brandNeon transition-colors">Testimonials</a>
+        <a href="index.html#faqs" class="hover:text-brandNeon transition-colors">FAQs</a>
+        <a href="index.html#contact" class="hover:text-brandNeon transition-colors">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white hover:text-brandNeon focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-brandNeon/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html#home" class="block py-2 text-brandMuted hover:text-brandNeon">Home</a>
+      <a href="about.html" class="block py-2 text-brandMuted hover:text-brandNeon">About</a>
+      <a href="services.html" class="block py-2 text-brandMuted hover:text-brandNeon">Services</a>
+      <a href="contracts.html" class="block py-2 text-brandNeon font-semibold">Contracts</a>
+      <a href="index.html#portfolio" class="block py-2 text-brandMuted hover:text-brandNeon">Portfolio</a>
+      <a href="index.html#testimonials" class="block py-2 text-brandMuted hover:text-brandNeon">Testimonials</a>
+      <a href="index.html#faqs" class="block py-2 text-brandMuted hover:text-brandNeon">FAQs</a>
+      <a href="index.html#contact" class="block py-2 text-brandMuted hover:text-brandNeon">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative py-16 overflow-hidden border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="inline-block px-3 py-1 bg-brandCard border border-brandNeon/30 rounded-full text-brandNeon text-xs tracking-wider uppercase">
+          <i class="fa-solid fa-file-signature mr-2"></i>Enterprise & Strategic Partnerships
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Contract Engagements & <span class="text-brandNeon">Investor Deals</span>
+        </h1>
+        <p class="text-brandMuted text-lg max-w-2xl mx-auto">
+          Formalizing strategic software partnerships, high-stakes investor collaborations, and customized tech contracts for enterprises and SMEs across Nigeria.
+        </p>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTED CONTRACT SCENES -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Featured Contract <span class="text-brandNeon">Milestones</span></h2>
+          <p class="text-brandMuted max-w-xl mx-auto">A look inside our strategic tech execution deals in Apapa, Lagos, and across Nigeria.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Contract Scene 1 -->
+          <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandNeon/20 hover:shadow-neon-glow transition-all">
+            <div class="h-72 overflow-hidden relative">
+              <img src="c:\Users\USER\Downloads\image 2.jpg" alt="Enterprise Contract Signing with Nigerian Investors" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-brandCard via-brandDark/30 to-transparent"></div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-brandNeon uppercase tracking-widest">Enterprise Class</span>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] rounded font-mono">ACTIVE CONTRACT</span>
+              </div>
+              <h3 class="text-2xl font-bold">Nigerian Investor Tech Agreement</h3>
+              <p class="text-brandMuted text-sm leading-relaxed">
+                Strategic tech modernization contract signed with premier venture investors to engineer high-throughput web front-ends for fintech and enterprise portals in Lagos.
+              </p>
+              <div class="pt-2 border-t border-brandNeon/10 flex items-center justify-between text-xs text-brandMuted font-mono">
+                <span>Location: Victoria Island / Apapa</span>
+                <span>Term: Multi-Year</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contract Scene 2 -->
+          <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandNeon/20 hover:shadow-neon-glow transition-all">
+            <div class="h-72 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="SME Tech Modernization Contract" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-brandCard via-brandDark/30 to-transparent"></div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-brandNeon uppercase tracking-widest">SME Strategic Tier</span>
+                <span class="px-2 py-1 bg-brandNeon/10 border border-brandNeon text-brandNeon text-[10px] rounded font-mono">COMPLETED</span>
+              </div>
+              <h3 class="text-2xl font-bold">Lagos SME Digital Transformation</h3>
+              <p class="text-brandMuted text-sm leading-relaxed">
+                Contractual design implementation and full-stack front-end engineering for a consortium of fast-scaling commerce SMEs across Lagos State.
+              </p>
+              <div class="pt-2 border-t border-brandNeon/10 flex items-center justify-between text-xs text-brandMuted font-mono">
+                <span>Location: Apapa, Lagos</span>
+                <span>Deliverable: Full Web Portal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTRACT ENGAGEMENT MODELS & TIERS -->
+    <section class="py-16 bg-brandCard/30 border-y border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Engagement <span class="text-brandNeon">Structures</span></h2>
+          <p class="text-brandMuted max-w-xl mx-auto">Flexible, professional contract frameworks designed for businesses of all scales.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Model 1 -->
+          <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 space-y-4 hover:border-brandNeon transition-all flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="text-brandNeon text-3xl"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="text-xl font-bold">Fixed Project Contract</h3>
+              <p class="text-brandMuted text-sm">Ideal for SMEs requiring a well-defined web portal, landing page, or frontend application with fixed milestones and clear deliverables.</p>
+              <ul class="text-xs text-brandMuted space-y-2 pt-2 border-t border-brandNeon/10">
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Clear Scope of Work (SOW)</li>
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Milestone-Based Payments</li>
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>1-Month Post-Launch Guarantee</li>
+              </ul>
+            </div>
+            <a href="#contract-form" class="mt-6 block text-center py-3 bg-brandNeon/10 border border-brandNeon text-brandNeon font-bold text-sm rounded-lg hover:bg-brandNeon hover:text-brandDark transition-all">Select Model</a>
+          </div>
+
+          <!-- Model 2 (Highlighted) -->
+          <div class="bg-brandCard p-8 rounded-2xl border-2 border-brandNeon shadow-neon-glow space-y-4 relative flex flex-col justify-between">
+            <span class="absolute -top-3 right-6 bg-brandNeon text-brandDark font-bold text-[10px] uppercase px-3 py-1 rounded-full">POPULAR</span>
+            <div class="space-y-4">
+              <div class="text-brandNeon text-3xl"><i class="fa-solid fa-building-columns"></i></div>
+              <h3 class="text-xl font-bold">Enterprise Retainer</h3>
+              <p class="text-brandMuted text-sm">Tailored for large investors, startups, and tech firms needing dedicated full-stack & front-end development hours monthly.</p>
+              <ul class="text-xs text-brandMuted space-y-2 pt-2 border-t border-brandNeon/10">
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Dedicated Developer Hours</li>
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Priority Issue Resolution</li>
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Direct Slack / Teams Integration</li>
+              </ul>
+            </div>
+            <a href="#contract-form" class="mt-6 block text-center py-3 bg-brandNeon text-brandDark font-bold text-sm rounded-lg hover:bg-white transition-all shadow-neon-glow">Request Proposal</a>
+          </div>
+
+          <!-- Model 3 -->
+          <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 space-y-4 hover:border-brandNeon transition-all flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="text-brandNeon text-3xl"><i class="fa-solid fa-handshake"></i></div>
+              <h3 class="text-xl font-bold">Tech Advisory & Audit</h3>
+              <p class="text-brandMuted text-sm">Specialized contract consultation for enterprise leadership looking to audit frontend performance, accessibility, and UI standards.</p>
+              <ul class="text-xs text-brandMuted space-y-2 pt-2 border-t border-brandNeon/10">
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Codebase & Performance Audit</li>
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>UI/UX Precision Report</li>
+                <li><i class="fa-solid fa-check text-brandNeon mr-2"></i>Architecture Recommendations</li>
+              </ul>
+            </div>
+            <a href="#contract-form" class="mt-6 block text-center py-3 bg-brandNeon/10 border border-brandNeon text-brandNeon font-bold text-sm rounded-lg hover:bg-brandNeon hover:text-brandDark transition-all">Select Model</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL STANDARDS & COMPLIANCE -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Professional <span class="text-brandNeon">Guarantees</span></h2>
+          <p class="text-brandMuted max-w-xl mx-auto">Every contract with Reetech Digital Solutions is governed by strict developer standards.</p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 space-y-2">
+            <i class="fa-solid fa-shield-halved text-brandNeon text-2xl mb-2"></i>
+            <h4 class="font-bold">NDA Protected</h4>
+            <p class="text-brandMuted text-xs">All intellectual property, enterprise codebases, and partner ideas remain 100% confidential under legal NDA.</p>
+          </div>
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 space-y-2">
+            <i class="fa-solid fa-clock-rotate-left text-brandNeon text-2xl mb-2"></i>
+            <h4 class="font-bold">On-Time Delivery</h4>
+            <p class="text-brandMuted text-xs">Strict milestone tracking ensures project delivery strictly adheres to agreed contract schedules.</p>
+          </div>
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 space-y-2">
+            <i class="fa-solid fa-code-compare text-brandNeon text-2xl mb-2"></i>
+            <h4 class="font-bold">Clean Code Standards</h4>
+            <p class="text-brandMuted text-xs">Maintainable, documented, and modular front-end architecture following industry best practices.</p>
+          </div>
+          <div class="bg-brandCard p-6 rounded-xl border border-brandNeon/10 space-y-2">
+            <i class="fa-solid fa-headset text-brandNeon text-2xl mb-2"></i>
+            <h4 class="font-bold">Post-Launch Support</h4>
+            <p class="text-brandMuted text-xs">Dedicated technical maintenance included with all executed development contracts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INITIATE CONTRACT INQUIRY FORM -->
+    <section id="contract-form" class="py-16 bg-brandCard/30 border-t border-brandCard">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="text-center space-y-3">
+          <h2 class="text-3xl font-bold">Initiate a Contract <span class="text-brandNeon">Discussion</span></h2>
+          <p class="text-brandMuted max-w-lg mx-auto">Are you an investor, enterprise executive, or SME owner? Fill out the form below to initiate formal contract negotiations.</p>
+        </div>
+
+        <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/30 shadow-neon-glow">
+          <form onsubmit="event.preventDefault(); alert('Contract Inquiry Received! Reetech Digital Solutions will contact you within 24 hours.');" class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">FULL NAME / EXECUTIVE TITLE</label>
+                <input type="text" required placeholder="e.g. Chief Technology Officer" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">ORGANIZATION / COMPANY</label>
+                <input type="text" required placeholder="e.g. Enterprise Ltd / SME Name" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">BUSINESS EMAIL</label>
+                <input type="email" required placeholder="reetech@gmail.com" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">PHONE NUMBER</label>
+                <input type="tel" required placeholder="08143278091" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-brandMuted mb-2">PREFERRED CONTRACT MODEL</label>
+              <select class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon text-white">
+                <option>Fixed Project Contract (SME / Web App)</option>
+                <option>Enterprise Retainer (Dedicated Hours)</option>
+                <option>Tech Advisory & Code Audit</option>
+                <option>Investor Partnership Engagement</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-mono text-brandMuted mb-2">PROJECT / CONTRACT SCOPE DETAILS</label>
+              <textarea rows="4" required placeholder="Outline your contractual expectations, project scope, timeline, and key requirements..." class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-4 bg-brandNeon text-brandDark font-bold rounded-lg hover:bg-white transition-all shadow-neon-glow uppercase tracking-wider">
+              Submit Contract Proposal
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandDark border-t border-brandCard py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-brandMuted text-xs">
+        © 2026 Reetech Digital Solutions. All Rights Reserved. Located in Apapa, Lagos State. Phone: 08143278091
+      </p>
+      <div class="flex space-x-4 text-brandMuted text-lg">
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU JAVASCRIPT -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

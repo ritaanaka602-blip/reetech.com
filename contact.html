@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Consultation | Reetech Digital Solutions</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0B0C10',
+            brandCard: '#1F2833',
+            brandNeon: '#00F0FF',
+            brandMuted: '#C5C6C7'
+          },
+          boxShadow: {
+            'neon-glow': '0 0 15px rgba(0, 240, 255, 0.4)',
+            'neon-strong': '0 0 25px rgba(0, 240, 255, 0.8)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0C10;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2833;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00F0FF;
+    }
+  </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandNeon selection:text-black">
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-brandDark/90 backdrop-blur-md border-b border-brandCard">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-white flex items-center gap-1">
+        Reetech<span class="text-brandNeon font-mono">&lt;Tech/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html#home" class="hover:text-brandNeon transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brandNeon transition-colors">About</a>
+        <a href="services.html" class="hover:text-brandNeon transition-colors">Services</a>
+        <a href="contracts.html" class="hover:text-brandNeon transition-colors">Contracts</a>
+        <a href="portfolio.html" class="hover:text-brandNeon transition-colors">Portfolio</a>
+        <a href="testimonials.html" class="hover:text-brandNeon transition-colors">Testimonials</a>
+        <a href="faqs.html" class="hover:text-brandNeon transition-colors">FAQs</a>
+        <a href="contact.html" class="text-brandNeon font-semibold">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-white hover:text-brandNeon focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brandCard border-b border-brandNeon/20 px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html#home" class="block py-2 text-brandMuted hover:text-brandNeon">Home</a>
+      <a href="about.html" class="block py-2 text-brandMuted hover:text-brandNeon">About</a>
+      <a href="services.html" class="block py-2 text-brandMuted hover:text-brandNeon">Services</a>
+      <a href="contracts.html" class="block py-2 text-brandMuted hover:text-brandNeon">Contracts</a>
+      <a href="portfolio.html" class="block py-2 text-brandMuted hover:text-brandNeon">Portfolio</a>
+      <a href="testimonials.html" class="block py-2 text-brandMuted hover:text-brandNeon">Testimonials</a>
+      <a href="faqs.html" class="block py-2 text-brandMuted hover:text-brandNeon">FAQs</a>
+      <a href="contact.html" class="block py-2 text-brandNeon font-semibold">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="relative py-16 overflow-hidden border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="inline-block px-3 py-1 bg-brandCard border border-brandNeon/30 rounded-full text-brandNeon text-xs tracking-wider uppercase">
+          <i class="fa-solid fa-headset mr-2"></i>Get In Touch With Our Engineering Team
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+          Start Your <span class="text-brandNeon">Project Partnership</span>
+        </h1>
+        <p class="text-brandMuted text-lg max-w-2xl mx-auto">
+          Have an engineering inquiry, SME website build request, or investor contract deal? Reach out directly to Reetech Digital Solutions in Apapa, Lagos.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT CARDS GRID -->
+    <section class="py-12 bg-brandCard/20 border-b border-brandCard">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <!-- Card 1: Phone -->
+          <a href="tel:08143278091" class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col items-center text-center space-y-4 group">
+            <div class="w-16 h-16 rounded-full bg-brandNeon/10 border border-brandNeon flex items-center justify-center text-brandNeon text-2xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3 class="text-lg font-bold">Call or WhatsApp</h3>
+            <p class="text-brandMuted text-xs font-mono">Speak directly with our technical lead</p>
+            <span class="text-brandNeon font-bold font-mono text-sm">08143278091</span>
+          </a>
+
+          <!-- Card 2: Email -->
+          <a href="mailto:reetech@gmail.com" class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon hover:shadow-neon-glow transition-all duration-300 flex flex-col items-center text-center space-y-4 group">
+            <div class="w-16 h-16 rounded-full bg-brandNeon/10 border border-brandNeon flex items-center justify-center text-brandNeon text-2xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3 class="text-lg font-bold">Email Inquiries</h3>
+            <p class="text-brandMuted text-xs font-mono">Send RFPs, briefs, & contracts</p>
+            <span class="text-brandNeon font-bold font-mono text-sm">reetech@gmail.com</span>
+          </a>
+
+          <!-- Card 3: Address -->
+          <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 hover:border-brandNeon flex flex-col items-center text-center space-y-4">
+            <div class="w-16 h-16 rounded-full bg-brandNeon/10 border border-brandNeon flex items-center justify-center text-brandNeon text-2xl">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3 class="text-lg font-bold">Head Office</h3>
+            <p class="text-brandMuted text-xs font-mono">Physical & remote operations</p>
+            <span class="text-brandNeon font-bold text-sm">Apapa, Lagos State, Nigeria</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM & DETAILS SECTION -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Contact Form (7 Columns) -->
+          <div class="lg:col-span-7 bg-brandCard p-8 sm:p-10 rounded-2xl border border-brandNeon/30 shadow-neon-glow space-y-6">
+            <div>
+              <h2 class="text-2xl font-bold">Send an <span class="text-brandNeon">Engineering Message</span></h2>
+              <p class="text-brandMuted text-sm mt-1">Fill out the consultation form below to discuss your project scope or contract terms.</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); alert('Thank you for contacting Reetech Digital Solutions! We have received your message and will reach out shortly.');" class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-brandMuted mb-2">FULL NAME *</label>
+                  <input type="text" required placeholder="e.g. John Doe" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon transition-all">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-brandMuted mb-2">EMAIL ADDRESS *</label>
+                  <input type="email" required placeholder="reetech@gmail.com" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon transition-all">
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-brandMuted mb-2">PHONE NUMBER</label>
+                  <input type="tel" placeholder="08143278091" class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon transition-all">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-brandMuted mb-2">ENGAGEMENT TYPE *</label>
+                  <select class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon text-white transition-all">
+                    <option>SME Custom Web Portal</option>
+                    <option>Enterprise Retainer Contract</option>
+                    <option>Investor Tech Partnership</option>
+                    <option>Front-End UI/UX Code Audit</option>
+                    <option>Other / Custom Consultation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">ESTIMATED PROJECT BUDGET (NGN/USD)</label>
+                <select class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon text-white transition-all">
+                  <option>SME Tier (Under ₦500,000)</option>
+                  <option>Standard Corporate (₦500,000 - ₦2,000,000)</option>
+                  <option>Enterprise Contract (₦2,000,000+)</option>
+                  <option>Retainer / Investor Deal</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-brandMuted mb-2">PROJECT BRIEF / MESSAGE *</label>
+                <textarea rows="5" required placeholder="Provide a brief summary of your technical requirements, goals, or preferred timeline..." class="w-full bg-brandDark border border-brandNeon/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brandNeon transition-all"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 bg-brandNeon text-brandDark font-bold rounded-lg hover:bg-white transition-all shadow-neon-glow uppercase tracking-wider flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> Dispatch Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Side Info Panel (5 Columns) -->
+          <div class="lg:col-span-5 space-y-8">
+            
+            <!-- Operating Hours Box -->
+            <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 space-y-4">
+              <h3 class="text-lg font-bold flex items-center gap-2 text-brandNeon">
+                <i class="fa-regular fa-clock"></i> Business Hours
+              </h3>
+              <div class="space-y-3 text-sm font-mono border-t border-brandNeon/10 pt-4">
+                <div class="flex justify-between text-brandMuted">
+                  <span>Monday - Friday:</span>
+                  <span class="text-white font-bold">8:00 AM - 6:00 PM</span>
+                </div>
+                <div class="flex justify-between text-brandMuted">
+                  <span>Saturday:</span>
+                  <span class="text-white font-bold">10:00 AM - 4:00 PM</span>
+                </div>
+                <div class="flex justify-between text-brandMuted">
+                  <span>Sunday:</span>
+                  <span class="text-brandNeon font-bold">Emergency Support Only</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Map Card -->
+            <div class="bg-brandCard p-8 rounded-2xl border border-brandNeon/20 space-y-4">
+              <h3 class="text-lg font-bold flex items-center gap-2 text-brandNeon">
+                <i class="fa-solid fa-map-location-dot"></i> Location & Hub
+              </h3>
+              <p class="text-xs text-brandMuted leading-relaxed">
+                Our main engineering studio is located in <strong>Apapa, Lagos State</strong>. We are strategically situated to service enterprise logistics hubs, commercial brands, and tech ventures.
+              </p>
+              
+              <!-- Map Container / Graphic Frame -->
+              <div class="w-full h-48 bg-brandDark rounded-xl border border-brandNeon/30 relative flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 bg-[radial-gradient(#00F0FF_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+                <div class="text-center z-10 space-y-2 p-4">
+                  <i class="fa-solid fa-location-crosshairs text-3xl text-brandNeon animate-pulse"></i>
+                  <p class="text-xs font-mono font-bold">APAPA, LAGOS STATE, NIGERIA</p>
+                  <p class="text-[10px] text-brandMuted font-mono">LAT: 6.4483° N | LONG: 3.3589° E</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Hotline Callout -->
+            <div class="bg-gradient-to-r from-brandCard to-brandDark p-6 rounded-2xl border border-brandNeon/40 flex items-center justify-between gap-4">
+              <div>
+                <h4 class="font-bold text-sm">Need Urgent Response?</h4>
+                <p class="text-xs text-brandMuted">Call our developer hotline directly.</p>
+              </div>
+              <a href="tel:08143278091" class="px-4 py-2 bg-brandNeon text-brandDark font-bold text-xs rounded-lg hover:bg-white transition-colors uppercase font-mono">
+                Call Now
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandDark border-t border-brandCard py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-brandMuted text-xs">
+        © 2026 Reetech Digital Solutions. All Rights Reserved. Located in Apapa, Lagos State. Phone: 08143278091
+      </p>
+      <div class="flex space-x-4 text-brandMuted text-lg">
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="hover:text-brandNeon transition-colors"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Mobile Drawer Navigation
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
